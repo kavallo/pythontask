@@ -27,7 +27,7 @@ def login():
 @app.route('/acceder-login', methods=['POST'])
 def accederlogin():
     login = Login.query.filter_by(user=request.form['pass'], clave=request.form['pass'])
-    console.log(login)
+    
     if 1==2: 
         return redirect(url_for('home'))
     
