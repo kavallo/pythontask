@@ -28,6 +28,8 @@ def login():
 def accederlogin():
     login = Login.query.filter_by(user=request.form['pass'], clave=request.form['pass'])
     
+
+    
     if 1==2: 
         return redirect(url_for('home'))
     
